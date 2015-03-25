@@ -1,0 +1,2557 @@
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (15.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150325123459)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20150325123459')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSCHEMA (0.2ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (512.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (133.6ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150325123459)
+  [4;36;1mSQL (178.9ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (16.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20150325123459')[0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSCHEMA (0.2ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150325123459)
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSCHEMA (0.2ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150325123459)
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSCHEMA (0.2ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150325123459)
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSCHEMA (0.2ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:12:15) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 73ms (View: 70, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 12:12:39) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 63ms (View: 57, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 12:12:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (69.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=1):
+  app/controllers/users_controller.rb:16:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (10.5ms)
+Rendered rescues/_request_and_response (188.7ms)
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 12:12:49) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 28ms (View: 7, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-03-26 12:12:51) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"", "email"=>""}, "commit"=>"Create"}
+  [4;36;1mSQL (87.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (39.4ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES('', '', '2015-03-26 06:42:51', '2015-03-26 06:42:51')[0m
+  [4;36;1mSQL (17.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed in 171ms (DB: 145) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 12:12:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (55.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 106ms (View: 7, DB: 55) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2015-03-26 12:13:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 32ms (View: 10, DB: 0) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:15:38) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 12:15:40) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 29ms (View: 6, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:15:41) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2015-03-26 12:16:04) [DELETE]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Destroy (52.4ms)[0m   [0mDELETE FROM `users` WHERE `id` = 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed in 87ms (DB: 53) | 302 Found [http://localhost/users/1]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:16:05) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 12:16:07) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 29ms (View: 23, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-03-26 12:16:23) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Harry Potter", "email"=>"harry@gmail"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES('Harry Potter', 'harry@gmail', '2015-03-26 06:46:23', '2015-03-26 06:46:23')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/2
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 12:16:23) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/users/2]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2015-03-26 12:16:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 32ms (View: 6, DB: 0) | 200 OK [http://localhost/users/2/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2015-03-26 12:16:31) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Harry Potter", "email"=>"harry@gmail.com"}, "commit"=>"Update", "id"=>"2"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (72.3ms)[0m   [0mUPDATE `users` SET `email` = 'harry@gmail.com', `updated_at` = '2015-03-26 06:46:31' WHERE `id` = 2[0m
+  [4;36;1mSQL (6.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/2
+Completed in 88ms (DB: 79) | 302 Found [http://localhost/users/2]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 12:16:31) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/users/2]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:16:39) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 12:16:43) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-03-26 12:17:00) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Ronald Weasley", "email"=>"ron@yahoo.com"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES('Ronald Weasley', 'ron@yahoo.com', '2015-03-26 06:47:00', '2015-03-26 06:47:00')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/3
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 12:17:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/users/3]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:17:02) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 12:17:03) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-03-26 12:17:11) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Hermione Granger", "email"=>"hermione@spew.com"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES('Hermione Granger', 'hermione@spew.com', '2015-03-26 06:47:11', '2015-03-26 06:47:11')[0m
+  [4;36;1mSQL (26.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/4
+Completed in 36ms (DB: 27) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 12:17:11) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/users/4]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:17:13) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2015-03-26 12:17:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/users/3/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:17:17) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2015-03-26 12:17:18) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/users/4/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:17:22) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:17:34) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/users/]
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2015-03-26 12:25:45) [DELETE]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "id"=>"4"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Destroy (1.1ms)[0m   [0;1mDELETE FROM `users` WHERE `id` = 4[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed in 8ms (DB: 2) | 302 Found [http://localhost/users/4]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:25:45) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:25:49) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 12:25:54) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:25:56) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 12:25:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/users/2]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:25:59) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2015-03-26 12:27:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/users/3/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2015-03-26 12:27:11) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Ronald Weasley", "email"=>"ron@yahoo.org"}, "commit"=>"Update", "id"=>"3"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `email` = 'ron@yahoo.org', `updated_at` = '2015-03-26 06:57:11' WHERE `id` = 3[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/3
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/users/3]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 12:27:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 29ms (View: 2, DB: 0) | 200 OK [http://localhost/users/3]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 12:27:15) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 14:59:34) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 85ms (View: 81, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 15:00:06) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 15:00:23) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSCHEMA (31.1ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150325123459)
+Migrating to CreateMicroposts (20150326101128)
+  [4;36;1mSQL (142.0ms)[0m   [0;1mCREATE TABLE `microposts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (11.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20150326101128')[0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSCHEMA (0.2ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `microposts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `microposts`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 15:46:03) [GET]
+  [4;36;1mMicropost Load (0.4ms)[0m   [0;1mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#new (for 127.0.0.1 at 2015-03-26 15:46:06) [GET]
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 32ms (View: 24, DB: 0) | 200 OK [http://localhost/microposts/new]
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2015-03-26 15:46:20) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"Books", "user_id"=>"Supritha"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMicropost Create (0.3ms)[0m   [0;1mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES('Books', 0, '2015-03-26 10:16:20', '2015-03-26 10:16:20')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/1
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/microposts]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 15:46:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 1) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/microposts/1]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 15:46:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 1) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 33ms (View: 28, DB: 0) | 200 OK [http://localhost/microposts/1/edit]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 15:46:29) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"Books", "user_id"=>"4"}, "commit"=>"Update", "id"=>"1"}
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMicropost Update (0.4ms)[0m   [0;1mUPDATE `microposts` SET `user_id` = 4, `updated_at` = '2015-03-26 10:16:29' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/1
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/microposts/1]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 15:46:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 1) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/microposts/1]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 15:46:34) [GET]
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 15:46:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMicropost Load (0.4ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 1) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/microposts/1]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 15:46:38) [GET]
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#new (for 127.0.0.1 at 2015-03-26 15:46:39) [GET]
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/new]
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2015-03-26 15:46:52) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"Learning", "user_id"=>"4"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMicropost Create (0.3ms)[0m   [0mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES('Learning', 4, '2015-03-26 10:16:52', '2015-03-26 10:16:52')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/2
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/microposts]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 15:46:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 2) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/microposts/2]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 15:46:54) [GET]
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 15:47:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 1) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/microposts/1]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 15:47:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMicropost Load (15.5ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 2) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 23ms (View: 2, DB: 15) | 200 OK [http://localhost/microposts/2]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 15:47:10) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 3) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Micropost with ID=3):
+  app/controllers/microposts_controller.rb:16:in `show'
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (11.0ms)
+Rendered rescues/_request_and_response (16.7ms)
+Rendering rescues/layout (not_found)
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 15:47:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMicropost Load (0.4ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 2) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/microposts/2]
+
+
+Processing MicropostsController#new (for 127.0.0.1 at 2015-03-26 15:47:19) [GET]
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 29ms (View: 23, DB: 0) | 200 OK [http://localhost/microposts/new]
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2015-03-26 15:47:27) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"Magic!!!!", "user_id"=>"1"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mMicropost Create (0.3ms)[0m   [0;1mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES('Magic!!!!', 1, '2015-03-26 10:17:27', '2015-03-26 10:17:27')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/3
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/microposts]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 15:47:27) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 3) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/microposts/3]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 15:47:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 3) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 31ms (View: 9, DB: 0) | 200 OK [http://localhost/microposts/3/edit]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 15:47:38) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"Magic!!!!", "user_id"=>"1.2"}, "commit"=>"Update", "id"=>"3"}
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/3
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/microposts/3]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 15:47:38) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 3) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/microposts/3]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 15:47:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 3) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/3/edit]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 15:47:42) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"Magic!!!!", "user_id"=>"1.9"}, "commit"=>"Update", "id"=>"3"}
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/3
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/microposts/3]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 15:47:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 3) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/microposts/3]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 15:47:50) [GET]
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#destroy (for 127.0.0.1 at 2015-03-26 15:47:56) [DELETE]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "id"=>"1"}
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMicropost Destroy (0.2ms)[0m   [0;1mDELETE FROM `microposts` WHERE `id` = 1[0m
+  [4;35;1mSQL (30.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/microposts
+Completed in 38ms (DB: 31) | 302 Found [http://localhost/microposts/1]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 15:47:56) [GET]
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 15:49:09) [GET]
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 16:25:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 2) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/microposts/2]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 16:25:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 2) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/2/edit]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 16:53:51) [GET]
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/]
+
+
+Processing MicropostsController#new (for 127.0.0.1 at 2015-03-26 16:53:54) [GET]
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/microposts/new]
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2015-03-26 16:54:34) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"Length check"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 379ms (View: 25, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2015-03-26 16:54:43) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"Length check"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMicropost Create (0.3ms)[0m   [0;1mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES('12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890', 0, '2015-03-26 11:24:43', '2015-03-26 11:24:43')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/5
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/microposts]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 16:54:43) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 16:54:46) [GET]
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 16:54:54) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 23ms (View: 8, DB: 0) | 200 OK [http://localhost/microposts/5/edit]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:55:01) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"0"}, "commit"=>"Update", "id"=>"5"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:55:02) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"0"}, "commit"=>"Update", "id"=>"5"}
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:55:03) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"0"}, "commit"=>"Update", "id"=>"5"}
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:55:03) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"0"}, "commit"=>"Update", "id"=>"5"}
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:55:03) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"0"}, "commit"=>"Update", "id"=>"5"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:55:03) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"0"}, "commit"=>"Update", "id"=>"5"}
+  [4;36;1mMicropost Load (0.4ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 160ms (View: 7, DB: 1) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:55:04) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"0"}, "commit"=>"Update", "id"=>"5"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 16:55:05) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 16:55:08) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/microposts/5/edit]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:55:13) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"9999"}, "commit"=>"Update", "id"=>"5"}
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMicropost Update (0.4ms)[0m   [0;1mUPDATE `microposts` SET `user_id` = 9999, `updated_at` = '2015-03-26 11:25:13' WHERE `id` = 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/5
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/microposts/5]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 16:55:13) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 16:55:41) [GET]
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 28ms (View: 23, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 16:55:45) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mMicropost Load (0.5ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/5/edit]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:55:47) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"9999"}, "commit"=>"Update", "id"=>"5"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (undefined method `user' for #<Micropost:0x007fd1927b61d0>):
+  app/controllers/microposts_controller.rb:62:in `block in update'
+  app/controllers/microposts_controller.rb:61:in `update'
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (15.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 16:55:50) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 26ms (View: 19, DB: 0) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 16:55:51) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/microposts/5/edit]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:55:53) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"9999"}, "commit"=>"Update", "id"=>"5"}
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (undefined method `user' for #<Micropost:0x007fd1927bcf08>):
+  app/controllers/microposts_controller.rb:62:in `block in update'
+  app/controllers/microposts_controller.rb:61:in `update'
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (15.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 16:56:02) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 26ms (View: 20, DB: 0) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 16:56:04) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/5/edit]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:56:07) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"9999"}, "commit"=>"Update", "id"=>"5"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (undefined method `user' for #<Micropost:0x007fd1927c5608>):
+  app/controllers/microposts_controller.rb:62:in `block in update'
+  app/controllers/microposts_controller.rb:61:in `update'
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (15.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 16:56:10) [GET]
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 31ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 16:56:40) [GET]
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/microposts/]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 16:56:43) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mMicropost Load (0.4ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/microposts/5/edit]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:56:48) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"9999"}, "commit"=>"Update", "id"=>"5"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 16:57:01) [GET]
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 16:57:03) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/microposts/5/edit]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:57:08) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"9999"}, "commit"=>"Update", "id"=>"5"}
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (undefined method `user' for #<Micropost:0x007fd191107600>):
+  app/controllers/microposts_controller.rb:62:in `block in update'
+  app/controllers/microposts_controller.rb:61:in `update'
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (47.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 16:57:43) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/microposts/5/edit]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 16:57:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/microposts/5/edit]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 16:58:00) [GET]
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 226ms (View: 222, DB: 0) | 200 OK [http://localhost/microposts/]
+
+
+Processing MicropostsController#edit (for 127.0.0.1 at 2015-03-26 16:58:08) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/microposts/5/edit]
+
+
+Processing MicropostsController#update (for 127.0.0.1 at 2015-03-26 16:58:10) [PUT]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "user_id"=>"9999"}, "commit"=>"Update", "id"=>"5"}
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/edit
+Completed in 17ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 16:59:53) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mMicropost Load (0.7ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 5) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://localhost/microposts/5]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 16:59:57) [GET]
+  [4;35;1mMicropost Load (0.4ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 17:03:56) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 59ms (View: 56, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 17:04:03) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 41ms (View: 30, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-03-26 17:04:23) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Hermione Granger", "email"=>"hermyown@gmail.com"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES('Hermione Granger', 'hermyown@gmail.com', '2015-03-26 11:34:23', '2015-03-26 11:34:23')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/5
+Completed in 354ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 17:04:23) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 24ms (View: 8, DB: 0) | 200 OK [http://localhost/users/5]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 17:04:25) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 17:04:26) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-03-26 17:04:36) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Ginerva Weasley", "email"=>"ginny@gmail.com"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES('Ginerva Weasley', 'ginny@gmail.com', '2015-03-26 11:34:36', '2015-03-26 11:34:36')[0m
+  [4;36;1mSQL (28.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/6
+Completed in 38ms (DB: 29) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 17:04:36) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 6) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/users/6]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 17:04:38) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 17:04:39) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-03-26 17:04:45) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Luna Lovegood", "email"=>"lune@gmail.com"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES('Luna Lovegood', 'lune@gmail.com', '2015-03-26 11:34:45', '2015-03-26 11:34:45')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/7
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 17:04:45) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 7) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/users/7]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 17:04:46) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 17:04:47) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 19ms (View: 11, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-03-26 17:04:55) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Neville Longbottom", "email"=>"neville@gmail.com"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES('Neville Longbottom', 'neville@gmail.com', '2015-03-26 11:34:55', '2015-03-26 11:34:55')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/8
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 17:04:55) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 8) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/users/8]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 17:04:56) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 17:04:58) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-03-26 17:05:04) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Cho Chang", "email"=>"cho@gmail.com"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES('Cho Chang', 'cho@gmail.com', '2015-03-26 11:35:04', '2015-03-26 11:35:04')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/9
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 17:05:04) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 22ms (View: 2, DB: 0) | 200 OK [http://localhost/users/9]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 17:05:05) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 17:05:06) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-03-26 17:05:15) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Severus Snape", "email"=>"snape@gmail.com"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES('Severus Snape', 'snape@gmail.com', '2015-03-26 11:35:15', '2015-03-26 11:35:15')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/10
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 17:05:15) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/users/10]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 17:05:16) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 17:05:17) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-03-26 17:05:43) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Albus Percival Wulfric Brian Dumbledore", "email"=>"dumbledore@gmail.com"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES('Albus Percival Wulfric Brian Dumbledore', 'dumbledore@gmail.com', '2015-03-26 11:35:43', '2015-03-26 11:35:43')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/11
+Completed in 26ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 17:05:43) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/users/11]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 17:05:45) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 17:05:48) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-03-26 17:05:57) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "user"=>{"name"=>"Rubeus Hagrid", "email"=>"hagrid@yahoo.com"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`) VALUES('Rubeus Hagrid', 'hagrid@yahoo.com', '2015-03-26 11:35:57', '2015-03-26 11:35:57')[0m
+  [4;36;1mSQL (18.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/12
+Completed in 27ms (DB: 19) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-03-26 17:05:57) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/users/12]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 17:05:59) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 17:06:02) [GET]
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/microposts/]
+
+
+Processing MicropostsController#new (for 127.0.0.1 at 2015-03-26 17:07:37) [GET]
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 570ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/new]
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2015-03-26 17:07:42) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"Check mapping", "user_id"=>"4"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2015-03-26 17:07:50) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"Check mapping", "user_id"=>"4"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 34ms (View: 25, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2015-03-26 17:07:53) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"Check mapping", "user_id"=>"1"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2015-03-26 17:07:56) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"Check mapping", "user_id"=>"1"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2015-03-26 17:08:06) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"Check mapping", "user_id"=>"4"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMicropost Create (0.3ms)[0m   [0mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES('Check mapping', 4, '2015-03-26 11:38:06', '2015-03-26 11:38:06')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/6
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/microposts]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 17:08:06) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 6) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/microposts/6]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 17:08:08) [GET]
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/microposts]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSCHEMA (30.9ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSCHEMA (0.3ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSCHEMA (0.4ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.2ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSCHEMA (0.3ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.2ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSCHEMA (0.3ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.4ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSCHEMA (0.3ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSCHEMA (0.4ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.4ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSCHEMA (0.2ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.2ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSCHEMA (0.2ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.2ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSCHEMA (0.4ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSCHEMA (0.3ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.4ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSCHEMA (0.3ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSCHEMA (0.3ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSCHEMA (0.2ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 2) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mMicropost Load (0.4ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 2) [0m
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 17:22:52) [GET]
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 32ms (View: 6, DB: 0) | 200 OK [http://localhost/microposts]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 2) [0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 17:23:32) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 17:23:34) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 17:23:43) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 48ms (View: 44, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 17:23:55) [GET]
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/microposts/]
+
+
+Processing MicropostsController#new (for 127.0.0.1 at 2015-03-26 17:23:59) [GET]
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/new]
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2015-03-26 17:24:15) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"J K Rowling", "user_id"=>"2"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMicropost Create (0.3ms)[0m   [0;1mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES('J K Rowling', 2, '2015-03-26 11:54:15', '2015-03-26 11:54:15')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/7
+Completed in 354ms (DB: 1) | 302 Found [http://localhost/microposts]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 17:24:15) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 7) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/microposts/7]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 17:24:16) [GET]
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/microposts]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mMicropost Load (0.4ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 2) [0m
+  [4;35;1mSCHEMA (1.6ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSCHEMA (0.4ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` ORDER BY users.id DESC LIMIT 1[0m
+  [4;36;1mMicropost Load (0.4ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 12) [0m
+
+
+Processing MicropostsController#new (for 127.0.0.1 at 2015-03-26 17:30:18) [GET]
+Rendering template within layouts/microposts
+Rendering microposts/new
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/microposts/new]
+
+
+Processing MicropostsController#create (for 127.0.0.1 at 2015-03-26 17:30:31) [POST]
+  Parameters: {"authenticity_token"=>"dSvdF1K1WO0xlBPigTdwSovTttvIooyEbMPYkEYI2oE=", "micropost"=>{"content"=>"My Next check for ID 12", "user_id"=>"12"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMicropost Create (0.3ms)[0m   [0mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES('My Next check for ID 12', 12, '2015-03-26 12:00:31', '2015-03-26 12:00:31')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/microposts/8
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/microposts]
+
+
+Processing MicropostsController#show (for 127.0.0.1 at 2015-03-26 17:30:31) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mMicropost Load (0.2ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.`id` = 8) [0m
+Rendering template within layouts/microposts
+Rendering microposts/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/microposts/8]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 17:30:32) [GET]
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/microposts]
+
+
+Processing MicropostsController#index (for 127.0.0.1 at 2015-03-26 17:30:37) [GET]
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` [0m
+Rendering template within layouts/microposts
+Rendering microposts/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/microposts]
+  [4;35;1mSCHEMA (0.4ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` ORDER BY users.id DESC LIMIT 1[0m
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 12) [0m
+  [4;36;1mSCHEMA (52.8ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150325123459)
+Migrating to CreateMicroposts (20150326101128)
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSCHEMA (0.2ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `microposts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `microposts`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-03-26 20:11:35) [GET]
+
+ActionController::RoutingError (No route matches "/Pages.home" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-03-26 20:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/Pages/home" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-03-26 20:11:46) [GET]
+
+ActionController::RoutingError (No route matches "/pages/home" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-26 20:12:41) [GET]
+Rendering pages/home
+Completed in 69ms (View: 68, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-03-26 20:14:02) [GET]
+Rendering pages/contact
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-03-26 20:14:05) [GET]
+Rendering pages/help
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-03-26 20:14:20) [GET]
+
+ActionController::RoutingError (No route matches "/controller/action" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-26 20:14:48) [GET]
+Rendering pages/home
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-03-26 20:15:19) [GET]
+
+ActionController::RoutingError (No route matches "/controller/action" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 21:55:44) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 71ms (View: 21, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2015-03-26 21:55:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 51ms (View: 24, DB: 0) | 200 OK [http://localhost/users/2/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 21:55:54) [GET]
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 45ms (View: 16, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-03-26 21:55:55) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 24ms (View: 10, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-03-26 21:55:58) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-03-27 10:47:33) [GET]
+
+ActionController::RoutingError (No route matches "/home" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 10:48:03) [GET]
+Rendering pages/home
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 14:35:32) [GET]
+Rendering pages/home
+Completed in 36ms (View: 34, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-03-27 14:35:37) [GET]
+Rendering pages/contact
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-03-27 14:41:12) [GET]
+Rendering pages/about
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 14:41:57) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 14:43:11) [GET]
+Rendering pages/home
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-03-27 14:43:18) [GET]
+Rendering pages/help
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-03-27 14:43:20) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-03-27 14:43:27) [GET]
+Rendering pages/contact
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-03-27 14:43:48) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-03-27 14:43:51) [GET]
+Rendering pages/about
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 14:59:35) [GET]
+Rendering pages/home
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:00:56) [GET]
+Rendering pages/home
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:00:59) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:02:04) [GET]
+Rendering pages/home
+ERROR: compiling _run_erb_app47views47pages47home46html46erb RAISED /Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^
+Function body: #coding:UTF-8
+          def _run_erb_app47views47pages47home46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<html lang=\"en\" xml:lang=\"en\" xmlns=\"http://w3.org/1999/xhtml\">\n<head>\n\t<title>Ruby On Rails Sample app! Home page. | "
+
+; @output_buffer.concat(( @title ).to_s); @output_buffer.concat "</title>\n\t<body>\n\t\t<h1>Home page </h1>\n\t\t<p>\n\t\t\t"
+
+
+
+; @output_buffer.concat(( @title is the title variable from pages_controller (Action part)  ).to_s); @output_buffer.concat "\n\t\t\tContact Ruby on Rails tutorial about the sample app at\n\t\t\t<a href = \"http://www.railstutorial.org/feedback\"> feedback page</a>\n\t\t</p>\n</body>\n</html>"
+
+
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `module_eval'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `compile!'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:61:in `compile'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:28:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/template.rb:205:in `render_template'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/base.rb:265:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:936:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1328:in `default_render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1334:in `perform_action'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:532:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:606:in `process_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:391:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:386:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:9:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:28:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/params_parser.rb:15:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/failsafe.rb:26:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:114:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/reloader.rb:34:in `run'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/static.rb:31:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+ActionView::TemplateError (/Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^) on line #7 of app/views/pages/home.html.erb:
+4: 	<body>
+5: 		<h1>Home page </h1>
+6: 		<p>
+7: 			<%= @title is the title variable from pages_controller (Action part)  %>
+8: 			Contact Ruby on Rails tutorial about the sample app at
+9: 			<a href = "http://www.railstutorial.org/feedback"> feedback page</a>
+10: 		</p>
+
+    <internal:prelude>:10:in `synchronize'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (29.6ms)
+Rendered rescues/_request_and_response (36.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:02:27) [GET]
+Rendering pages/home
+ERROR: compiling _run_erb_app47views47pages47home46html46erb RAISED /Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^
+Function body: #coding:UTF-8
+          def _run_erb_app47views47pages47home46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<html lang=\"en\" xml:lang=\"en\" xmlns=\"http://w3.org/1999/xhtml\">\n<head>\n\t<title>Ruby On Rails Sample app! Home page. | "
+
+; @output_buffer.concat(( @title ).to_s); @output_buffer.concat "</title>\n\t<body>\n\t\t<h1>Home page </h1>\n\t\t<p>\n\t\t\t<p "
+
+
+
+; @output_buffer.concat(( @title is the title variable from pages_controller (Action part)  ).to_s); @output_buffer.concat " ></p>\n\t\t\tContact Ruby on Rails tutorial about the sample app at\n\t\t\t<a href = \"http://www.railstutorial.org/feedback\"> feedback page</a>\n\t\t</p>\n</body>\n</html>"
+
+
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `module_eval'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `compile!'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:61:in `compile'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:28:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/template.rb:205:in `render_template'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/base.rb:265:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:936:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1328:in `default_render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1334:in `perform_action'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:532:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:606:in `process_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:391:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:386:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:9:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:28:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/params_parser.rb:15:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/failsafe.rb:26:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:114:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/reloader.rb:34:in `run'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/static.rb:31:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+ActionView::TemplateError (/Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^) on line #7 of app/views/pages/home.html.erb:
+4: 	<body>
+5: 		<h1>Home page </h1>
+6: 		<p>
+7: 			<p <%= @title is the title variable from pages_controller (Action part)  %> ></p>
+8: 			Contact Ruby on Rails tutorial about the sample app at
+9: 			<a href = "http://www.railstutorial.org/feedback"> feedback page</a>
+10: 		</p>
+
+    <internal:prelude>:10:in `synchronize'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (12.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:02:28) [GET]
+Rendering pages/home
+ERROR: compiling _run_erb_app47views47pages47home46html46erb RAISED /Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^
+Function body: #coding:UTF-8
+          def _run_erb_app47views47pages47home46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<html lang=\"en\" xml:lang=\"en\" xmlns=\"http://w3.org/1999/xhtml\">\n<head>\n\t<title>Ruby On Rails Sample app! Home page. | "
+
+; @output_buffer.concat(( @title ).to_s); @output_buffer.concat "</title>\n\t<body>\n\t\t<h1>Home page </h1>\n\t\t<p>\n\t\t\t<p "
+
+
+
+; @output_buffer.concat(( @title is the title variable from pages_controller (Action part)  ).to_s); @output_buffer.concat " ></p>\n\t\t\tContact Ruby on Rails tutorial about the sample app at\n\t\t\t<a href = \"http://www.railstutorial.org/feedback\"> feedback page</a>\n\t\t</p>\n</body>\n</html>"
+
+
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `module_eval'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `compile!'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:61:in `compile'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:28:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/template.rb:205:in `render_template'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/base.rb:265:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:936:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1328:in `default_render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1334:in `perform_action'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:532:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:606:in `process_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:391:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:386:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:9:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:28:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/params_parser.rb:15:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/failsafe.rb:26:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:114:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/reloader.rb:34:in `run'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/static.rb:31:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+ActionView::TemplateError (/Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^) on line #7 of app/views/pages/home.html.erb:
+4: 	<body>
+5: 		<h1>Home page </h1>
+6: 		<p>
+7: 			<p <%= @title is the title variable from pages_controller (Action part)  %> ></p>
+8: 			Contact Ruby on Rails tutorial about the sample app at
+9: 			<a href = "http://www.railstutorial.org/feedback"> feedback page</a>
+10: 		</p>
+
+    <internal:prelude>:10:in `synchronize'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (23.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:02:44) [GET]
+Rendering pages/home
+ERROR: compiling _run_erb_app47views47pages47home46html46erb RAISED /Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^
+Function body: #coding:UTF-8
+          def _run_erb_app47views47pages47home46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<html lang=\"en\" xml:lang=\"en\" xmlns=\"http://w3.org/1999/xhtml\">\n<head>\n\t<title>Ruby On Rails Sample app! Home page. | "
+
+; @output_buffer.concat(( @title ).to_s); @output_buffer.concat "</title>\n\t<body>\n\t\t<h1>Home page </h1>\n\t\t<p>\n\t\t\t<p>"
+
+
+
+; @output_buffer.concat(( @title is the title variable from pages_controller (Action part)  ).to_s); @output_buffer.concat " </p>\n\t\t\tContact Ruby on Rails tutorial about the sample app at\n\t\t\t<a href = \"http://www.railstutorial.org/feedback\"> feedback page</a>\n\t\t</p>\n</body>\n</html>"
+
+
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `module_eval'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `compile!'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:61:in `compile'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:28:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/template.rb:205:in `render_template'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/base.rb:265:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:936:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1328:in `default_render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1334:in `perform_action'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:532:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:606:in `process_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:391:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:386:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:9:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:28:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/params_parser.rb:15:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/failsafe.rb:26:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:114:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/reloader.rb:34:in `run'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/static.rb:31:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+ActionView::TemplateError (/Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^) on line #7 of app/views/pages/home.html.erb:
+4: 	<body>
+5: 		<h1>Home page </h1>
+6: 		<p>
+7: 			<p><%= @title is the title variable from pages_controller (Action part)  %> </p>
+8: 			Contact Ruby on Rails tutorial about the sample app at
+9: 			<a href = "http://www.railstutorial.org/feedback"> feedback page</a>
+10: 		</p>
+
+    <internal:prelude>:10:in `synchronize'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (12.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:02:46) [GET]
+Rendering pages/home
+ERROR: compiling _run_erb_app47views47pages47home46html46erb RAISED /Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^
+Function body: #coding:UTF-8
+          def _run_erb_app47views47pages47home46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<html lang=\"en\" xml:lang=\"en\" xmlns=\"http://w3.org/1999/xhtml\">\n<head>\n\t<title>Ruby On Rails Sample app! Home page. | "
+
+; @output_buffer.concat(( @title ).to_s); @output_buffer.concat "</title>\n\t<body>\n\t\t<h1>Home page </h1>\n\t\t<p>\n\t\t\t<p>"
+
+
+
+; @output_buffer.concat(( @title is the title variable from pages_controller (Action part)  ).to_s); @output_buffer.concat " </p>\n\t\t\tContact Ruby on Rails tutorial about the sample app at\n\t\t\t<a href = \"http://www.railstutorial.org/feedback\"> feedback page</a>\n\t\t</p>\n</body>\n</html>"
+
+
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `module_eval'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `compile!'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:61:in `compile'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:28:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/template.rb:205:in `render_template'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/base.rb:265:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:936:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1328:in `default_render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1334:in `perform_action'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:532:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:606:in `process_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:391:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:386:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:9:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:28:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/params_parser.rb:15:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/failsafe.rb:26:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:114:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/reloader.rb:34:in `run'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/static.rb:31:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+ActionView::TemplateError (/Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^) on line #7 of app/views/pages/home.html.erb:
+4: 	<body>
+5: 		<h1>Home page </h1>
+6: 		<p>
+7: 			<p><%= @title is the title variable from pages_controller (Action part)  %> </p>
+8: 			Contact Ruby on Rails tutorial about the sample app at
+9: 			<a href = "http://www.railstutorial.org/feedback"> feedback page</a>
+10: 		</p>
+
+    <internal:prelude>:10:in `synchronize'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (26.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:02:59) [GET]
+Rendering pages/home
+ERROR: compiling _run_erb_app47views47pages47home46html46erb RAISED /Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^
+Function body: #coding:UTF-8
+          def _run_erb_app47views47pages47home46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<html lang=\"en\" xml:lang=\"en\" xmlns=\"http://w3.org/1999/xhtml\">\n<head>\n\t<title>Ruby On Rails Sample app! Home page. | "
+
+; @output_buffer.concat(( @title ).to_s); @output_buffer.concat "</title>\n\t<body>\n\t\t<h1>Home page </h1>\n\t\t<p>\n\t\t\t<p>|"
+
+
+
+; @output_buffer.concat(( @title is the title variable from pages_controller (Action part)  ).to_s); @output_buffer.concat " </p>\n\t\t\tContact Ruby on Rails tutorial about the sample app at\n\t\t\t<a href = \"http://www.railstutorial.org/feedback\"> feedback page</a>\n\t\t</p>\n</body>\n</html>"
+
+
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `module_eval'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `compile!'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:61:in `compile'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:28:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/template.rb:205:in `render_template'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/base.rb:265:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:936:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1328:in `default_render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1334:in `perform_action'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:532:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:606:in `process_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:391:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:386:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:9:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:28:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/params_parser.rb:15:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/failsafe.rb:26:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:114:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/reloader.rb:34:in `run'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/static.rb:31:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+ActionView::TemplateError (/Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^) on line #7 of app/views/pages/home.html.erb:
+4: 	<body>
+5: 		<h1>Home page </h1>
+6: 		<p>
+7: 			<p>|<%= @title is the title variable from pages_controller (Action part)  %> </p>
+8: 			Contact Ruby on Rails tutorial about the sample app at
+9: 			<a href = "http://www.railstutorial.org/feedback"> feedback page</a>
+10: 		</p>
+
+    <internal:prelude>:10:in `synchronize'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (12.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:03:07) [GET]
+Rendering pages/home
+ERROR: compiling _run_erb_app47views47pages47home46html46erb RAISED /Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^
+Function body: #coding:UTF-8
+          def _run_erb_app47views47pages47home46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<html lang=\"en\" xml:lang=\"en\" xmlns=\"http://w3.org/1999/xhtml\">\n<head>\n\t<title>Ruby On Rails Sample app! Home page. | "
+
+; @output_buffer.concat(( @title ).to_s); @output_buffer.concat "</title>\n\t<body>\n\t\t<h1>Home page </h1>\n\t\t<p>\n\t\t\t#<p>|"
+
+
+
+; @output_buffer.concat(( @title is the title variable from pages_controller (Action part)  ).to_s); @output_buffer.concat " </p>\n\t\t\tContact Ruby on Rails tutorial about the sample app at\n\t\t\t<a href = \"http://www.railstutorial.org/feedback\"> feedback page</a>\n\t\t</p>\n</body>\n</html>"
+
+
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `module_eval'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:91:in `compile!'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:61:in `compile'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/renderable.rb:28:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/template.rb:205:in `render_template'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_view/base.rb:265:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:936:in `render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1328:in `default_render'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:1334:in `perform_action'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activesupport-2.3.18/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:532:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/filters.rb:606:in `process_with_filters'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:391:in `process'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/base.rb:386:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:29:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:9:in `cache'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/query_cache.rb:28:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/activerecord-2.3.18/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/params_parser.rb:15:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/failsafe.rb:26:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:114:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/reloader.rb:34:in `run'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/actionpack-2.3.18/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/static.rb:31:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `block in call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rails-2.3.18/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/Users/user/.rvm/gems/ruby-1.9.3-p547@currentversion/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+ActionView::TemplateError (/Users/user/Desktop/first_app/app/views/pages/home.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.concat(( @title is the title variable from page...
+...                               ^) on line #7 of app/views/pages/home.html.erb:
+4: 	<body>
+5: 		<h1>Home page </h1>
+6: 		<p>
+7: 			#<p>|<%= @title is the title variable from pages_controller (Action part)  %> </p>
+8: 			Contact Ruby on Rails tutorial about the sample app at
+9: 			<a href = "http://www.railstutorial.org/feedback"> feedback page</a>
+10: 		</p>
+
+    <internal:prelude>:10:in `synchronize'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (24.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:03:15) [GET]
+Rendering pages/home
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:03:38) [GET]
+Rendering pages/home
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:03:40) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:04:09) [GET]
+Rendering pages/home
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:04:19) [GET]
+Rendering pages/home
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:04:23) [GET]
+Rendering pages/home
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:08:14) [GET]
+Rendering pages/home
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:08:22) [GET]
+Rendering pages/home
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-03-27 15:08:25) [GET]
+Rendering pages/about
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-03-27 15:08:29) [GET]
+Rendering pages/help
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-03-27 15:08:36) [GET]
+Rendering pages/contact
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-03-27 15:09:41) [GET]
+Rendering pages/contact
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:09:44) [GET]
+Rendering pages/home
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:35:03) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 26ms (View: 25, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-03-27 15:35:05) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
