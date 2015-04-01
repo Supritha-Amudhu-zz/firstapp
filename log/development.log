@@ -13507,3 +13507,870 @@ ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:me
   /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
 
 Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-04-01 11:53:49) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 30ms (View: 29, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:53:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:53:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:53:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-04-01 11:53:55) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:53:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:53:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:53:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#page (for 127.0.0.1 at 2015-04-01 11:54:00) [GET]
+  Parameters: {"id"=>"home"}
+
+ActionController::UnknownAction (No action responded to page. Actions: about, contact, help, and home):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#pages (for 127.0.0.1 at 2015-04-01 11:54:05) [GET]
+  Parameters: {"id"=>"home"}
+
+ActionController::UnknownAction (No action responded to pages. Actions: about, contact, help, and home):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-04-01 11:54:10) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-04-01 11:54:15) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-04-01 11:54:16) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-04-01 11:54:18) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-04-01 11:54:19) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-04-01 11:54:42) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 20ms (View: 19, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:54:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-04-01 11:56:25) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:56:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:56:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 11:56:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2015-04-01 11:58:55) [GET]
+  [4;36;1mUser Load (92.8ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 178ms (View: 64, DB: 93) | 200 OK [http://localhost/users]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:00:04) [GET]
+
+ActionController::RoutingError (No route matches "/home" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:00:34) [GET]
+
+ActionController::RoutingError (No route matches "/home" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2015-04-01 12:00:41) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: about, contact, help, and home):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-04-01 12:00:58) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.9ms)
+
+ActionView::TemplateError (undefined local variable or method `root_path' for #<ActionView::Base:0x007fa0b2bc58b8>) on line #4 of app/views/layouts/_header.html.erb:
+1: 	<div id="header">
+2: 				<%= image_tag("logo.png", :alt => "Sample app", :class => "round")  %>
+3: 					<ul class = "navigation round">
+4: 						<li><%= link_to "Home", root_path, :id => "test" %></li>
+5: 						<li><%= link_to "Help", help_path %></li>
+6: 						<li><%= link_to "Sign in", '#' %></li>
+7: 					</ul>
+
+    app/views/layouts/_header.html.erb:4
+    app/views/layouts/application.html.erb:8
+    <internal:prelude>:10:in `synchronize'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (26.0ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:01:39) [GET]
+
+ActionController::RoutingError (No route matches "/home" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-04-01 12:01:48) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+
+ActionView::TemplateError (undefined local variable or method `root_path' for #<ActionView::Base:0x007fa0b2bdd580>) on line #4 of app/views/layouts/_header.html.erb:
+1: 	<div id="header">
+2: 				<%= image_tag("logo.png", :alt => "Sample app", :class => "round")  %>
+3: 					<ul class = "navigation round">
+4: 						<li><%= link_to "Home", root_path, :id => "test" %></li>
+5: 						<li><%= link_to "Help", help_path %></li>
+6: 						<li><%= link_to "Sign in", '#' %></li>
+7: 					</ul>
+
+    app/views/layouts/_header.html.erb:4
+    app/views/layouts/application.html.erb:8
+    <internal:prelude>:10:in `synchronize'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (15.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-04-01 12:02:50) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+
+ActionView::TemplateError (undefined local variable or method `root_path' for #<ActionView::Base:0x007fa0b2172a28>) on line #4 of app/views/layouts/_header.html.erb:
+1: 	<div id="header">
+2: 				<%= image_tag("logo.png", :alt => "Sample app", :class => "round")  %>
+3: 					<ul class = "navigation round">
+4: 						<li><%= link_to "Home", root_path, :id => "test" %></li>
+5: 						<li><%= link_to "Help", help_path %></li>
+6: 						<li><%= link_to "Sign in", '#' %></li>
+7: 					</ul>
+
+    app/views/layouts/_header.html.erb:4
+    app/views/layouts/application.html.erb:8
+    <internal:prelude>:10:in `synchronize'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+    /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendered rescues/_trace (28.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-04-01 12:03:31) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:03:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:03:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:03:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-04-01 12:03:34) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:03:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:03:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:03:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-04-01 12:03:35) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:03:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:03:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:03:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-04-01 12:03:36) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:03:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:03:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:03:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-04-01 12:05:09) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:05:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:05:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:05:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-04-01 12:05:11) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:05:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:05:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:05:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-04-01 12:05:15) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:05:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:05:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:05:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-04-01 12:05:16) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:05:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/screen.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:05:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/ie.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-04-01 12:05:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/print.css" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/user/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
