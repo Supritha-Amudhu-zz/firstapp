@@ -8,7 +8,10 @@ class MicropostsController < ApplicationController
       format.html # index.html.erb
       format.xml  { render :xml => @microposts }
     end
+<<<<<<< HEAD
     
+=======
+>>>>>>> 2a97d64ef7dd18710f9f685419094f6a1a12dc99
   end
 
   # GET /microposts/1
