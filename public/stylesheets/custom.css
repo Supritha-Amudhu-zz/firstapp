@@ -1,0 +1,64 @@
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	background: #C7D9DA;
+	height: 1200px;
+}
+
+#header img{
+	padding: 1em;
+	background: #fff;
+	height: 250px;
+	display: block;
+	margin-left: 100px;
+}
+body{
+	background: ;
+}
+#header{
+	padding-top: 20px;
+}
+#content{
+font-size: 100%;
+font-family: Georgia;
+padding: 25px;
+background: #fff;
+margin: 60px 40px 140px;
+
+}
+a{
+	color: #1E90FF;
+	text-decoration: none;
+}
+li a{
+	color: #ffffff;
+	text-decoration: none;
+}
+a:hover{
+	color: #8B0000;
+	text-decoration: underline;
+}
+a:visited{
+	color: #DC143C;
+	text-decoration: none;
+}
+a:active{
+	color: #4169E1;
+	text-decoration: underline;
+}
+
+a.signup_button{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 180px;
+	color: #fff;
+	background: #006400;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 20px;
+	display: block;
+	margin-top: 100px;
+
+}
+

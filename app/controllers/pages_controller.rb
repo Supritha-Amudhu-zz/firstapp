@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
   	@title = "Home"
-  	@hometext = "Sample home text!"
+  	@hometext = "Learn Ruby at Hogwarts!"
   end
 
   def contact
