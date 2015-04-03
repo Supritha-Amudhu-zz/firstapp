@@ -61,4 +61,10 @@ a.signup_button{
 	margin-top: 100px;
 
 }
+li:hover>a{
+	color: #8B0000;
+}
+li:active>a{
+	color: #8FDFB9;
+}
 

@@ -1,13 +1,27 @@
-<p>
-  <b>Name:</b>
-  <%=h @user.name %>
-</p>
+	<table class="profile">
+		<tr>
+			<td class="main">
+		<h2>
+			<img src ="http://www.gravatar.com/avatar.php?gravatar_id=#{Digest::MD5::hexdigest(@user.email)}", class = 'avatar'>
+			<%= h @user.name %>
+		</h2>
+	</td>
+	<td class = "sidebar round">
+		<strong>Name</strong> <%= h @user.name %><br/>
+		<strong>URL</strong> <%= link_to user_path(@user), user_path(@user) %>
+	</td>
+</tr>
+</table>
 
-<p>
-  <b>Email:</b>
-  <%=h @user.email %>
-</p>
+	  <b>Name:</b>
+	  <%=h @user.name %>
+	</p>
+
+	<p>
+	  <b>Email:</b>
+	  <%=h @user.email %>
+	</p>
 
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+	<%= link_to 'Edit', edit_user_path(@user) %> |
+	<%= link_to 'Back', users_path %>

@@ -1,0 +1,31 @@
+table.profile{
+	width: 100%;
+	margin-bottom: 0;
+}
+
+td.main{
+	width: 70%;
+	padding: 1em;
+}
+
+td.sidebar{
+	width: 30%;
+	padding: 1em;
+	vertical-align: top;
+	background: #257B4A;
+	color: #fff;
+}
+
+td.sidebar>a:visited{
+	color: #DAEE82;
+}
+
+td.sidebar>a{
+	color: #DAEE82;
+}
+
+.profile img{
+	border: 1px solid #999;
+	margin-bottom: -15px;
+
+}
