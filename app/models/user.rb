@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
 	has_many :microposts
 
 	attr_accessor :encrypt_password
-	attr_accessible :name, :email, :password, :encrypt_password
+	attr_accessible :name, :email, :password, :encrypt_password, :password_confirmation
 	validates_presence_of :name, :email, :password
 
 	validates_length_of :name, :maximum => 50
@@ -14,6 +14,8 @@ class User < ActiveRecord::Base
 
 	validates_confirmation_of :password
 	validates_length_of :password, :within => 6..40
+	validates_confirmation_of :password_confirmation
+	validates_length_of :password_confirmation, :within => 6..40
 
 	before_save :encrypt_password
 

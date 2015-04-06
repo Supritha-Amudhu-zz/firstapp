@@ -29,3 +29,15 @@ td.sidebar>a{
 	margin-bottom: -15px;
 
 }
+
+div.field, div.actions, div.extradiv, h1{
+	margin: 30px;
+}
+#user_submit{
+	width: 15%;
+	height: 30px;
+	border: 2px solid;
+	border-radius: 25px;
+	background-color: #A4283B;
+	color: #fff;
+}

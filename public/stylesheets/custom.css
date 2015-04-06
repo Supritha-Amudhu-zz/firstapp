@@ -2,7 +2,8 @@
 	width: 1000px;
 	margin: 0 auto;
 	background: #C7D9DA;
-	height: 1200px;
+	min-height: 1200px;
+
 }
 
 #header img{
@@ -66,5 +67,55 @@ li:hover>a{
 }
 li:active>a{
 	color: #8FDFB9;
+}
+
+/*Error Message*/
+
+.fieldWithErrors{
+	/*padding: 1px;*/
+	/*background-color: red;*/
+	display: table;
+}
+
+.fieldWithErrors>input{
+	border: 1px solid red;
+	padding: 3px;
+}
+
+.fieldWithErrors label{
+	/*color: #fff;*/
+}
+
+#errorExplanation{
+	width: 500px;
+	border: 2px solid #9C3342;
+	/*padding: 9px;*/
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+	min-height: 30px;
+	/*overflow: auto;*/
+}
+
+#errorExplanation p{
+	color: #333;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+#errorExplanation ul li{
+	font-size: 12px;
+	list-style: none;
+	color: #9C3342;
+}
+
+#errorExplanation ul{
+	width: 90%;
+	background: none;
+	border: none;
+	/*background-color: #9C3342;*/
+	height: auto;
+	min-height: 10px;
+	overflow: auto;
 }
 
