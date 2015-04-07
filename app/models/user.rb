@@ -20,7 +20,7 @@ class User < ActiveRecord::Base
 	before_save :encrypt_password
 
 	public
-	def has_password? (submitted_password)
+	def has_password?(submitted_password)
 		encrypted_password == encrypt(submitted_password)
 	end
 
@@ -30,11 +30,18 @@ class User < ActiveRecord::Base
 		return user if user.has_password(submitted_password)
 	end
 
+	def remember_me!
+		self.remember_token = encrypt("#{salt}--#{id}--#{Time.now.utc}")
+		save_without_validation
+	end
+
 
 	private
 	def encrypt_password
-		self.salt = make_salt
-		self.encrypt_password = encrypt(password)
+		unless password.nil?
+			self.salt = make_salt
+			self.encrypt_password = encrypt(password)
+		end
 	end
 
 	def encrypt(string)
@@ -42,12 +49,11 @@ class User < ActiveRecord::Base
 	end
 
 	def make_salt
-		secure_hash ("#{Time.now.utc}#{password}")
+		secure_hash("#{Time.now.utc}#{password}")
 	end
 
 	def secure_hash(string)
 		Digest::SHA2.hexdigest(string)
 	end
 
-	
 end

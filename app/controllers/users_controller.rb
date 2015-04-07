@@ -32,7 +32,6 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @user }
-      @title = "Sign up"
     end
   end
 
@@ -45,15 +44,14 @@ class UsersController < ApplicationController
   # POST /users.xml
   def create
     @user = User.new(params[:user])
-
-    # respond_to do |format|
       if @user.save
+        sign_in @user
         flash[:success] = "Welcome to the Sample App!"
         redirect_to @user 
       else
         @title = "Sign Up"
         render 'new'
-        end
+      end
   end
 
   # PUT /users/1
