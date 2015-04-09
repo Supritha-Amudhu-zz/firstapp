@@ -1,12 +1,10 @@
-		<%debugger%>
-		<% flash.each do |key, value| %>
-			<div class="flash <%= key %>"><%= value %></div>
-		<% end %>
 	<table class="profile">
 		<tr>
 			<td class="main">
 		<h2>
-			<img src ="http://www.gravatar.com/avatar.php?gravatar_id=#{Digest::MD5::hexdigest(@user.email)}", class = 'avatar'>
+			<%= gravatar_for @user,{:default=>nil, :size=>50, :rating=>"PG", :alt=>"", :title=>"", :class=>"gravatar", :ssl=>false, :fast=>false} %>
+			<!-- <img src ="http://www.gravatar.com/avatar.php?gravatar_id=#{Digest::MD5::hexdigest(@user.email)}", class = 'avatar'> -->
+			<!-- <img src ="<%= gravatar_url @user.email %>", class = 'avatar'>  -->
 			<%= h @user.name %>
 		</h2>
 	</td>

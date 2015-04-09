@@ -4,6 +4,7 @@ gem "rake", "0.8.7"
 gem "rails", "2.3.18"
 gem "mysql2", "0.3.18"
 gem "sqlite3", "1.3.10"
+gem "will_paginate", "2.3.16"
 
 
 gem "activerecord-mysql2-adapter", "0.0.3"

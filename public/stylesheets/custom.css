@@ -11,13 +11,17 @@
 	background: #fff;
 	height: 250px;
 	display: block;
-	margin-left: 100px;
+	margin-left: 40px;
 }
 body{
 	background: ;
 }
 #header{
 	padding-top: 20px;
+}
+
+#footer{
+	min-height: 70px;
 }
 #content{
 font-size: 100%;
@@ -27,6 +31,11 @@ background: #fff;
 margin: 60px 40px 140px;
 
 }
+.foot>li>a{
+	font-size: auto;
+	font-size: 15px;
+}
+
 a{
 	color: #1E90FF;
 	text-decoration: none;
@@ -46,6 +55,19 @@ a:visited{
 a:active{
 	color: #4169E1;
 	text-decoration: underline;
+}
+
+.users a{
+	color: #1E543B;
+}
+
+.users a:hover{
+	color: #3C6A8D;
+	text-decoration: underline;
+}
+.users a:visited{
+	color: #1E543B;
+	text-decoration: none;
 }
 
 a.signup_button{
@@ -118,4 +140,14 @@ li:active>a{
 	min-height: 10px;
 	overflow: auto;
 }
+
+/*User list page*/
+ul.users{
+	margin-top: 1em;
+}
+
+.users li{
+	list-style: none;
+}
+
 

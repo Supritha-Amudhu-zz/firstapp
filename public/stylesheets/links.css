@@ -1,8 +1,10 @@
 .navigation {
 	/*float: right;*/
-	margin: -250px 55px;
-	width: 40%;
+	margin: -250px 40px;
+	width: auto;
+	min-width: 26%;
 	float: right;
+	max-width: 60%;
 }
 
 
@@ -18,10 +20,21 @@ ul{
   position:relative;
   z-index:999;
 }
+ul.users{
+	background: none;
+	border: none;
+	z-index: none;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	height: auto;
+	min-height: 30px;
+}
 
 .navigation li{
 	/*margin: 0px 0px 6px 0px;*/
-	padding: 0px 10px 0px 6px;
+	/*padding: 0px 10px 0px 6px;*/
+	padding: 0;
 	float: left;
 	position: center;
 	list-style: none;
@@ -33,11 +46,11 @@ ul{
 	font-weight: bold;
 	font-family: arial;
 	font-style: normal;
-	font-size: 15px;
+	font-size: 12px;
 	color: #fff;
 	text-decoration: none;
 	display: block;
-	padding: 6px 10px 6px 50px;
+	padding: 6px 10px 6px 35px;
 }
 
 .round{
