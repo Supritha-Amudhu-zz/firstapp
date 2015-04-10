@@ -1,6 +1,23 @@
-	<h1>Welcome to Hogwarts!</h1>
+<% if signed_in? %>
+<table class = "front">
+	<tr>
+		<td class = "main">
+			<h2 class = "micropost"> What's up? </h2>
+			<% debugger %>
+			<%= render :partial => 'pages/micropost_form' %>
+			<%= render :partial => 'pages/feed' %>
+		</td>
+		<td class = "sidebar round">
+			<%= render :partial => 'pages/user_info' %>
+		</td>
+	</tr>
+</table>
+<% else %>
+<h1>Welcome to Hogwarts!</h1>
 		<p>
 			<%= @hometext  %><br>
 			This is the home page for the <a href ="http://www.railstutorial.org/"> Ruby on Rails Tutorial</a> sample application
 		</p>
 <%= link_to "Sign up now!", signup_path, :class => "signup_button round"  %>
+
+<% end %>

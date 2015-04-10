@@ -7,10 +7,17 @@
 			<!-- <img src ="<%= gravatar_url @user.email %>", class = 'avatar'>  -->
 			<%= h @user.name %>
 		</h2>
+		<% unless @user.microposts.empty? %>
+		<table class = "microposts">
+			<%= render :partial => 'microposts/microposts', :locals => {:microposts => @user.microposts} %>
+		</table>
+		<%= will_paginate @microposts %>
+		<% end %>
 	</td>
 	<td class = "sidebar round">
-		<strong>Name</strong> <%= h @user.name %><br/>
-		<strong>URL</strong> <%= link_to user_path(@user), user_path(@user) %>
+		<strong>Name</strong>: <%= h @user.name %><br/>
+		<strong>URL</strong>: <%= link_to user_path(@user), user_path(@user) %><br/>
+		<strong>Microposts</strong>: <%= @user.microposts.count %>
 	</td>
 </tr>
 </table>

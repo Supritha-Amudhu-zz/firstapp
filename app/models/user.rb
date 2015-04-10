@@ -1,6 +1,6 @@
 require 'digest'
 class User < ActiveRecord::Base
-	has_many :microposts
+	has_many :microposts, :dependent => :destroy
 
 	attr_accessor :encrypt_password
 	attr_accessible :name, :email, :password, :encrypt_password, :password_confirmation
@@ -19,7 +19,6 @@ class User < ActiveRecord::Base
 
 	before_save :encrypt_password
 
-	public
 	def has_password?(submitted_password)
 		encrypted_password == encrypt(submitted_password)
 	end
@@ -33,6 +32,10 @@ class User < ActiveRecord::Base
 	def remember_me!
 		self.remember_token = encrypt("#{salt}--#{id}--#{Time.now.utc}")
 		save_without_validation
+	end
+
+	def feed
+		Micropost.all(:conditions => ["user_id = ?", id])
 	end
 
 

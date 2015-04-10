@@ -2,7 +2,8 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
 
-  include SessionsHelper
+include SessionsHelper
+
 before_filter :authenticate, :only => [:index, :edit, :update]
 before_filter :correct_user, :only => [:edit, :update]
 before_filter :admin_user, :only => :destroy
@@ -16,11 +17,8 @@ before_filter :admin_user, :only => :destroy
   # GET /users/1.xml
   def show
     @user = User.find(params[:id])
-    @title = @user.name
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @user }
-    end
+    @microposts = @user.microposts.paginate(:page => params[:id]) 
+    @title = CGI.escapeHTML(@user.name)
   end
 
   # GET /users/new
