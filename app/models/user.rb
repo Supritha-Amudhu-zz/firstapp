@@ -1,6 +1,12 @@
 require 'digest'
 class User < ActiveRecord::Base
 	has_many :microposts, :dependent => :destroy
+	has_many :relationships, :foreign_key => "follower_id", :dependent => :destroy
+	has_many :following, :through => :relationships, :source => :followed
+	has_many :reverse_relationships, :foreign_key => "followed_id", :class_name => "Relationship", :dependent => :destroy
+	has_many :followers, :through => :reverse_relationships, :source => :follower
+
+	named_scope :admin, :conditions => { :admin => true }
 
 	attr_accessor :encrypt_password
 	attr_accessible :name, :email, :password, :encrypt_password, :password_confirmation
@@ -20,13 +26,25 @@ class User < ActiveRecord::Base
 	before_save :encrypt_password
 
 	def has_password?(submitted_password)
-		encrypted_password == encrypt(submitted_password)
+		encrypt_password == encrypt(submitted_password)
 	end
 
 	def self.authenticate(email, submitted_password)
 		user = find_by_email(email)
 		return nil if user.nil?
-		return user if user.has_password(submitted_password)
+		return user if user.has_password?(submitted_password)
+	end
+
+	def following?(followed)
+		relationships.find_by_followed_id(followed)
+	end
+
+	def follow!(followed)
+		relationships.create!(:followed_id => followed_id)
+	end
+
+	def unfollow!(followed)
+		relationships.find_by_followed_id(followed).destroy
 	end
 
 	def remember_me!
@@ -35,7 +53,8 @@ class User < ActiveRecord::Base
 	end
 
 	def feed
-		Micropost.all(:conditions => ["user_id = ?", id])
+		# Micropost.all(:conditions => ["user_id = ?", id])
+		Micropost.from_users_followed_by(self)
 	end
 
 

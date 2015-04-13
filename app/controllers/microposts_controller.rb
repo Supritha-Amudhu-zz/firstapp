@@ -30,14 +30,14 @@ before_filter :authorized_user, :only => :destroy
 
   # GET /microposts/new
   # GET /microposts/new.xml
-  # def new
-  #   @micropost = Micropost.new
+   def new
+     @micropost = Micropost.new
 
-  #   respond_to do |format|
-  #     format.html # new.html.erb
-  #     format.xml  { render :xml => @micropost }
-  #   end
-  # end
+     respond_to do |format|
+       format.html # new.html.erb
+       format.xml  { render :xml => @micropost }
+     end
+   end
 
   # GET /microposts/1/edit
   # def edit

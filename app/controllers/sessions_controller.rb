@@ -1,5 +1,7 @@
 class SessionsController < ApplicationController
 
+include SessionsHelper
+
 	def new
 		@title = "Sign in"
 	end
@@ -11,7 +13,8 @@ class SessionsController < ApplicationController
 			@title = "Sign In"
 			render 'new'
 		else
-			sign_in user
+			user.remember_me!
+			cookies[:remember_token] = { :value => user.remember_token, :expires => 20.years.from_now.utc }
 			redirect_back_or user
 		end
 	end
