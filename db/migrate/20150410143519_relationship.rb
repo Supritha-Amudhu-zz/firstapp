@@ -1,5 +1,6 @@
 class Relationship < ActiveRecord::Migration
   def self.up
+  	
   end
 
   def self.down

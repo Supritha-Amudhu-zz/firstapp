@@ -1,4 +1,6 @@
 <% @user ||= current_user %>
+<% logger.info "@user.following .............. #{@user.following.count}"%>
+<% logger.info "@user.followers .............. #{@user.followers.count}"%>
 <div class = "stats">
 	<table>
 		<tr>

@@ -7,7 +7,7 @@ include SessionsHelper
 	def create
 		current_user.follow!(@user)
 		respond_to do |format|
-			format.html (redirect_to @user)
+			format.html {redirect_to @user}
 			format.js
 		end
 	end
@@ -15,14 +15,15 @@ include SessionsHelper
 	def destroy
 		current_user.unfollow!(@user)
 		respond_to do |format|
-			format.html (redirect_to @user)
+			format.html {redirect_to @user}
 			format.js
 		end
 	end
 
+
 	private
 
 	def get_followed_user
-		@user = User.find(params[:relationships][:followed_id])
+		@user = User.find(params[:relationship][:followed_id])
 	end	
 end

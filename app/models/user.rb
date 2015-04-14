@@ -2,7 +2,7 @@ require 'digest'
 class User < ActiveRecord::Base
 	has_many :microposts, :dependent => :destroy
 	has_many :relationships, :foreign_key => "follower_id", :dependent => :destroy
-	has_many :following, :through => :relationships, :source => :followed
+	has_many :following, :through => :relationships, :source => :follower
 	has_many :reverse_relationships, :foreign_key => "followed_id", :class_name => "Relationship", :dependent => :destroy
 	has_many :followers, :through => :reverse_relationships, :source => :follower
 
@@ -35,16 +35,18 @@ class User < ActiveRecord::Base
 		return user if user.has_password?(submitted_password)
 	end
 
-	def following?(followed)
-		relationships.find_by_followed_id(followed)
+	def following?(followed_id)
+		relationships.find_by_followed_id(followed_id)
 	end
 
 	def follow!(followed)
-		relationships.create!(:followed_id => followed_id)
+		logger.info "followed_id ..... #{followed.inspect}"
+		logger.info "self.... #{self.inspect}"
+		relationships.create!(:followed_id => followed.id)
 	end
 
 	def unfollow!(followed)
-		relationships.find_by_followed_id(followed).destroy
+		relationships.find_by_followed_id(followed.id).destroy
 	end
 
 	def remember_me!

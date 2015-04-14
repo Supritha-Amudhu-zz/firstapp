@@ -2,8 +2,7 @@
 	<tr>
 		<td class = "main">
 			<h2><%= @title %></h2>
-
-			<% unless @users.empty %>
+			<% unless @users.empty? %>
 			<ul class = "users">
 				<%= render @users %>
 			</ul>
@@ -11,8 +10,8 @@
 			<% end %>
 		</td>
 		<td class = "sidebar round">
-			<strong>Name</strong> <%= h.@user.name %><br/>
-			<strong>URL</strong> <%= link_tp user_path(@user), @user %><br/>
+			<strong>Name</strong> <%= h(@user.name) %><br/>
+			<strong>URL</strong> <%= link_to user_path(@user), @user %><br/>
 			<strong>Microposts</strong> <%= @user.microposts.count %>
 			<%= render 'pages/stats' %>
 			<% unless @users.empty? %>
